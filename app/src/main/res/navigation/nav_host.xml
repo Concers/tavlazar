@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_host"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.ovologos.tavlazar.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_oneDiceFragment"
+            app:destination="@id/oneDiceFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_twoDiceFragment"
+            app:destination="@id/twoDiceFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/oneDiceFragment"
+        android:name="com.ovologos.tavlazar.OneDiceFragment"
+        android:label="fragment_one_dice"
+        tools:layout="@layout/fragment_one_dice" />
+    <fragment
+        android:id="@+id/twoDiceFragment"
+        android:name="com.ovologos.tavlazar.TwoDiceFragment"
+        android:label="fragment_two_dice"
+        tools:layout="@layout/fragment_two_dice" />
+
+</navigation>
