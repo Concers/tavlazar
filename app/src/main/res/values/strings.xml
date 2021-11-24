@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">tavlazar</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="zar_at">Zar At</string>
+    <string name="tek_zar">Tek Zar</string>
+    <string name="cift_zar">Çift Zar</string>
+    <string name="rightFront">rightFront</string>
+</resources>
