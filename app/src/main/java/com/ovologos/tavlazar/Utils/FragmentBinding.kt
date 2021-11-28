@@ -10,7 +10,7 @@ import kotlin.reflect.KProperty
 
 
 class FragmentBinding<out T : ViewDataBinding>(
-    @LayoutRes private val resId: Int,
+    @LayoutRes private var resId: Int,
 ) : ReadOnlyProperty<Fragment, T> {
 
     private var binding: T? = null
