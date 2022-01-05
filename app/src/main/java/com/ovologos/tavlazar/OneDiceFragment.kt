@@ -28,4 +28,8 @@ class OneDiceFragment : Fragment() {
             binding.imgvRolldice.setImageResource(DrawableSoruce(roll()))
         }
     }
+
+
+
+
 }

@@ -1,5 +1,7 @@
 package com.ovologos.tavlazar.Utils
 
+import androidx.activity.OnBackPressedCallback
+import androidx.fragment.app.Fragment
 import com.ovologos.tavlazar.R
 
 fun roll(): Int {
@@ -17,3 +19,4 @@ fun DrawableSoruce(SourceInt: Int): Int {
     }
 
 }
+

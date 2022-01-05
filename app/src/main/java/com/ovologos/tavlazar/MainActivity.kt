@@ -1,9 +1,11 @@
 package com.ovologos.tavlazar
 
+import android.content.Context
 import android.os.Build
 import android.os.Bundle
 import android.view.WindowManager
 import androidx.appcompat.app.AppCompatActivity
+
 
 class MainActivity : AppCompatActivity() {
 
@@ -17,4 +19,7 @@ class MainActivity : AppCompatActivity() {
         }
         setContentView(R.layout.activity_main)
     }
+
+
+
 }

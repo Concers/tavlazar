@@ -7,7 +7,12 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.activity.OnBackPressedCallback
+import androidx.activity.OnBackPressedDispatcher
 import androidx.fragment.app.Fragment
+import androidx.lifecycle.LifecycleOwner
+import androidx.navigation.Navigation
+import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.fragment.findNavController
 import com.ovologos.tavlazar.Utils.FragmentBinding
 import com.ovologos.tavlazar.databinding.FragmentHomeBinding
@@ -30,7 +35,7 @@ class HomeFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        object : CountDownTimer(3000, 1000) {
+        val timer = object : CountDownTimer(3000, 1000) {
             override fun onTick(p0: Long) {}
             override fun onFinish() {
                 binding.splashFrameLayout.visibility = View.GONE
@@ -42,19 +47,21 @@ class HomeFragment : Fragment() {
 
 
 
+
+
         binding.btnRoll11.setOnClickListener {
             findNavController().navigate(R.id.oneDiceFragment)
-            Log.e("ButtonClick", "Tıklandi")
+
+
         }
         binding.btnRoll22.setOnClickListener {
             findNavController().navigate(R.id.twoDiceFragment)
-            Log.e("ButtonClick", "Tıklandi")
+
         }
 
 
     }
 
 
-
-
 }
+
